@@ -3,10 +3,10 @@ const jsonServer =require ("json-server")
  const middleware=jsonServer.defaults()
  const PORT=5000
  const route =jsonServer.router('db.json')
- MPServer.use(middleware)
- MPServer.use(route)
+ TDServer.use(middleware)
+ TDServer.use(route)
 
  TDServer.listen(PORT,()=>{
-    console.log(`MPServer started on ${PORT}`);
+    console.log(`TDServer started on ${PORT}`);
     
  })
